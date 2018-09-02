@@ -11,34 +11,41 @@ body {
   position: fixed;  /* Stay in place - DW: puts it from top on the left */
   width: 250px; /* 0 width - change this with JavaScript */
   /* z-index: 1;  Stay on top */
-  top: 0; Stay at the top
+  top: 0; /*Stay at the top*/
   /* left: 0; */
-  /* overflow-x: hidden;  Disable horizontal scroll */
-  /* transition: 0.5s;  0.5 second transition effect to slide in the sidenav */
+  overflow-x: hidden;  Disable horizontal scroll
+  transition: 0.5s;  /* 0.5 second transition effect to slide in the sidenav */
 }
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1.4em;
-    color: #757575; /* grey darken-1 */ /*#818181;*/
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: #757575; /* grey darken-1 */ /*#818181;*/
+  display: block;
+  transition: 0.3s;
 }
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #ffffff; /* grey darken-4 */
-    font-size: 1.5em;
-    /* font-weight: bold; */
+  color: #ffffff;
 }
-nav header p {
-  color: #757575; /* grey darken-1 */ /*#818181;*/
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  font-size: 36px;
+  margin-left: 50px;
+  position: absolute;
+  right: 25px;
+  top: -10px;
+}
+.sidenav p {
+  color: #757575; /* grey darken-1 */
   font-size: 1.6em;
   padding: 0 15px;
 }
 main {
   margin-left: 250px;
   padding: 0 25px;
+  transition: margin-left .5s;
 }
 h2 {
   padding-top: 25px; /* to be inline with top of nav when clicking the menu */

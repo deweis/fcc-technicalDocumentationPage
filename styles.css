@@ -1,6 +1,21 @@
 body {
   font-family: 'Quicksand', sans-serif;
 }
+/* Menu icon
+*  --> https://www.w3schools.com/howto/howto_css_menu_icon.asp
+**/
+.menu-icon {
+  display: none;
+  /* margin: 15px; */
+  width: 35px;
+}
+.icon-bar {
+  background-color: #bdbdbd; /* grey lighten-1 */
+  border-radius: 2px;
+  height: 5px;
+  margin: 6px 0;
+  /* width: 35px; */
+}
 /* The side navigation menu
 *  --> https://www.w3schools.com/howto/howto_js_sidenav.asp
 */
@@ -10,11 +25,11 @@ body {
   /*padding-top: 15px;  Place content 60px from the top */
   position: fixed;  /* Stay in place - DW: puts it from top on the left */
   width: 250px; /* 0 width - change this with JavaScript */
-  /* z-index: 1;  Stay on top */
+  /*z-index: 1;  Stay on top*/
   top: 0; /*Stay at the top*/
   /* left: 0; */
-  overflow-x: hidden;  Disable horizontal scroll
-  transition: 0.5s;  /* 0.5 second transition effect to slide in the sidenav */
+  overflow-x: hidden;  /*Disable horizontal scroll */
+  transition: width 0.5s;  /* 0.5 second transition effect to slide in the sidenav */
 }
 /* The navigation menu links */
 .sidenav a {
@@ -45,7 +60,7 @@ body {
 main {
   margin-left: 250px;
   padding: 0 25px;
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
 }
 h2 {
   padding-top: 25px; /* to be inline with top of nav when clicking the menu */

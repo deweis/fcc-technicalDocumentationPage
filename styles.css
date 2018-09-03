@@ -6,15 +6,17 @@ body {
 **/
 .menu-icon {
   display: none;
-  /* margin: 15px; */
-  width: 35px;
+  left: 15px;
+  position: fixed;
+  top: 15px;
+  width: 32px;
 }
 .icon-bar {
-  background-color: #bdbdbd; /* grey lighten-1 */
+  background-color: #9e9e9e; /* grey */
   border-radius: 2px;
   height: 5px;
   margin: 6px 0;
-  /* width: 35px; */
+  opacity: 0.6;
 }
 /* The side navigation menu
 *  --> https://www.w3schools.com/howto/howto_js_sidenav.asp
